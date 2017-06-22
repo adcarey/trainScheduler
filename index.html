@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Employee Data Management</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+
+
+</head>
+
+<body>
+
+<div class="container">
+ 
+
+      <!-- First of two columns -->
+      <div class="jumbotron">
+        <h1> Train Departures </h1>
+        <h2> Look out for the next train! </h2>
+      </div>
+
+      <!-- Second of two columns -->
+<div class="col-md-12 panel panel-default">
+  <div id="blue" class="panel-heading">
+    <div class="panel-title">
+       Current Train Schedule
+  </div>
+
+      </div>
+    <div class="panel-body" id="chartTitle">
+      <div class='row'>
+        <div class='col-md-3'>
+        Train Name
+        </div>
+        <div class='col-md-2'>
+        Destination
+        </div>
+        <div class='col-md-2'>
+        Frequency
+        </div>
+        <div class='col-md-2'>
+        Next Arrival
+        </div>
+        <div class='col-md-2'>
+        Minutes Away
+        </div>
+        <hr>
+      </div>
+      <div class="chartData">
+      </div>
+      
+    </div>
+</div>
+
+<div class="col-md-12 panel panel-default">
+  <div id="blue" class="panel-heading">
+    <div class="panel-title">
+       Add Train 
+    </div>
+  </div>
+        <div class="panel-body">
+          <div class="form-group bold">
+            <label for="name">Train Name</label>
+            <input type="text" class="form-control" id="name-input">
+            <label for="searchTerm">Destination</label>
+            <input type="text" class="form-control" id="destination-input">
+            <label for="searchTerm">First Train Time (HH:mm - military)</label>
+            <input type="text" class="form-control" id="start-input">
+            <label for="searchTerm">Frequency (min)</label>
+            <input type="text" class="form-control" id="frequency-input">
+          </div>         
+        
+
+ 
+  <div id="buttons">
+    <button class="btn" id="addButton">  Submit </button>
+    
+  </div>
+  </div>
+<!-- end of panel -->
+</div>
+
+<br>
+
+<!-- end of second panel -->
+<!-- end of container -->
+  </div> 
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <script type="text/javascript"></script>
+  <script src="assets/function.js"></script>
+
+     
+  </script>
+
+</body>
+
+</html>
